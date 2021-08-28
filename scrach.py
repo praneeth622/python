@@ -2986,64 +2986,30 @@ print(nums)
 # [2, 3, 5, 6, 7, 8]
 # [2, 3, 5, 6, 7, 8]
 '''
-# New one
+# Socket Pogramming in Python
+# Socket pograming means connect 2 or more clients and make them communicate
+# now we will comunicate 2 files we can use 2 systems also
 
+import socket
 
+s = socket.socket()
+print('Socket Connected')
+s.bind(('localhost',9999)) # localhost is ipadd and 9999 is port number
 
+s.listen(3) # 3 clients can connect
+print("waiting for connections")
 
+# we are listening ( wheather clint send requrst and get connected)
+# now client will send u request to connect but how many we can except 
+# first it will send and we will process and loop go on 
+# so we will create a loop 
 
+while True:
+    c, addr = s.accept()# when connected it will give clien soket = and addr is addr
+    print(" Connected with : ", addr) # it will prin client addr
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    c.send(bytes("Welcome to praneeth laptop","utf-8")) # this will send to client, client cant take str so we change it to bytes
+# now we have to create a client to connect
 
 
 
