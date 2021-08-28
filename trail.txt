@@ -1,0 +1,35 @@
+for c in qw:
+    if qw == "c":
+        continue
+
+
+
+
+
+a = int(input(" Enter First Number : "))
+b = int(input(" Enter Secound Number : "))
+print("Choose any one of the following")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multipication")
+print("4. Division")
+pns = int(input("Choose Any one option : "))
+if pns == 1:
+    print(" Your value is : ", a + b)
+elif pns == 2:
+    print(" Your value is : ", a - b)
+elif pns == 3:
+    print(" Your value is : ", a * b)
+elif pns == 4:
+    print(" Your value is : ", a / b)
+else :
+    print("Wrong option,  Try Again")
+
+print("Thank you , Vist again")
+
+if p == 'q' :
+    print('Exiting...')
+    
+else :
+    print( 'Done')
+    i = i+1

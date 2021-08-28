@@ -1,0 +1,37 @@
+class student:
+
+    def __init__(self,m1,m2):
+        self.m1 =m1 
+        self.m2 = m2
+
+    def __add__(self,other): # student.__add__(m1,m2)
+        m1 = self.m1 + other.m1
+        m2 = self.m2 + other.m2
+        s3 = student(m1,m2)
+        return s3
+
+    def __gt__(self,other):
+        r1 = self.m1 + self.m2
+        r2 = other.m1 + other.m2
+        if r1 >r2 :
+            return True
+        else:
+            return False
+            
+    def __str__(self):
+        return self.m1,self.m2
+
+
+    
+s1 = student(78,57)
+s2 = student(87,77)
+
+if s1 > s2 :
+    print("s1 Wins")
+else:
+    print('s2 wins')
+# s2 wins
+
+print(s1) # we cant get str insted er get adder so we should define function 3 in line 2203
+print(s1.__str__)
+print(s2.__str__)
