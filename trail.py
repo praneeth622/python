@@ -37,4 +37,8 @@ elif Ans == 4:
     print(" Your value is : ", x / y)
 '''
 # Dont erase it *************WARN*************** continue f stracth.py line 1459 
+while True:
+    c, addr = s.accept()# when connected it will give clien soket = and addr is addr
+    print(" Connected with : ", addr) # it will prin client addr
 
+    
